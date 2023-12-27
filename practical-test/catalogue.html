@@ -13,6 +13,11 @@
 
   <body>
     <div class="container">
+      <!-- top button -->
+      <div id="top-btn">
+        <button>Top</button>
+      </div>
+
       <!-- navigation -->
       <div id="navbar">
         <img
@@ -46,26 +51,15 @@
           class="box">
           4
         </div>
-        <!-- <div class="product">
-          <div class="card">
-            <img
-              src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//112/MTA-48770985/johnson_sepatu_johnson_basic_highcut_-hc-_black_white_sepatu_sekolah_hitam_full01_d7df3145.jpg"
-              alt=""
-              srcset="" />
-            <p class="title">
-              Sepatu Johnson Basic Highcut (HC) Black White Sepatu Sekolah Hitam
-            </p>
-            <p class="price">Rp159800</p>
-            <div class="detail-price">
-              <p>Rp</p>
-              <p>disc</p>
-            </div>
-            <button class="btn-bag">Add to bag</button>
-          </div>
-        </div> -->
         <div
           class="product"
-          id="productContainer"></div>
+          id="product-container"></div>
+        <div id="prev-product">
+          <button>Before</button>
+        </div>
+        <div id="next-product">
+          <button>next</button>
+        </div>
       </div>
 
       <!-- footer -->
@@ -89,8 +83,8 @@
           mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
           adipiscing elit.
         </p>
-        <button>Collapse all</button>
-        <p style="font-size: small">2022 PT Global Digital Niaga</p>
+        <button id="hide-details">Collapse all</button>
+        <span style="font-size: small">2022 PT Global Digital Niaga</span>
       </div>
     </div>
 
