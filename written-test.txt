@@ -1,0 +1,35 @@
+Written Test
+
+1. Javascript framework adalah kerangka kerja yang dirancang untuk memudahkan pengembangan aplikasi web dengan memanfaatkan bahasa javascript. Terdapat banyak framework dengan menggunakan bahasa javascript sebagai dasarnya, salah satunya Vue JS. Vue JS dirancang untuk pengembangan antarmuka yang dinamis dan responsif. Selain itu, Vue JS merupakan framework yang ramah untuk pemula karena kemudahannya. Vue JS memiliki ukuran yang ringan serta relatif kecil. Vue JS juga memiliki pendekatan yang sama dengan framework lainnya seperti dalam hal penggunaan component agar lebih mudah digunakan berulang kali.
+
+2. Elipsis dalam konteks pemrograman ataupun CSS dapat menunjukkan bahwa terdapat bagian program yang tidak ditulis. Hal ini biasanya dilakukan untuk menyingkat tulisan yang memiliki tempat terbatas
+
+3. Berikut penjelasannya
+    a. @keyframe: digunakan untuk mendefinisikan suatu animasi. Dimana terdapat beberapa poin yang dapat diatur dalam sebuah keyframe, seperti penggunaan from dan to serta penggunaan persenan secara spesifik.
+
+    b. animation-name: digunakan untuk menentukan nama animasi. Animation-name sendiri sudah terdapat beberapa bawaan dari CSS, seperti rotate dan bounce.
+
+    c. animation-duration: digunakan untuk mengatur lama durasi dari sebuah animasi. Animation-duration paling umum diatur dalam satuan detik.
+    
+    d. animation-iteration: digunakan untuk menentukan berapa banyak iterasi (perulangan) dari sebuah animasi. Secara default nilainya adalah 1, namun kita dapat mengaturnya menjadi infinite.
+
+    e. animation-direction: digunakan untuk menentukan direction atau arah dari sebuah animasi. Terdapat beberapa nilai seperti reverse dan alternate.
+
+4. Lazy load adalah sebuah teknik dimana suatu resource hanya akan dimuat atau digunakan ketika dibutuhkan saja, dalam hal ini contohnya ketika sebuah tombol diklik sehingga memunculkan sebuah modal. Hal ini sangat bermanfaat untuk pembagian beban pada sebuah website agar dapat berjalan dengan ringan, sehingga ketika sebuah website dimuat, maka tidak seluruh kontennya akan ditampilkan dan hanya konten-konten penting saja yang dimuat. Ketika sebuah bagian atau modal dibutuhkan maka dapat di trigger dengan suatu button yang mana baru akan memuat konten yang diinginkan.
+
+5. Berikut beberapa git commands:
+    a. git init: melakukan inisialisasi pertama kali pada sebuah folder.
+
+    b. git add: menambahkan file-file ataupun folder yang ingin di upload ke sebuah repository. Dengan git add dapat menambahkan keseluruhan file dengan menambahkan titik (git add .) ataupun dengan spesifik nama file.
+
+    c. git commit: menambahkan commit perubahan pada seluruh file yang telah ditambahkan. Terdapat beberapa spesifik command yang bermanfaat seperti -m untuk menambahkan commit baru, –amend untuk menggunakan commit sebelumnya ke perubahan sekarang, –no-edit agar tidak melakukan perubahan commit, dan lain-lain.
+
+    d. git branch: untuk melakukan penambahan, penghapusan, serta berpindah sebuah branch di suatu repository. 
+    
+    e. git remote: untuk menambahkan remote url repository. Dalam sebuah folder bisa saja terdapat lebih dari 1 remote url dengan memberikan nama yang berbeda-beda jika diperlukan (git remote add origin …. serta git remote add main ….)
+
+    f. git merge, git rebase, git squash: ketiga command ini hampir mirip atau sama kegunaannya dimana sama-sama untuk menggabungkan branch yang ada. Dimana git merge menggabungkan perubahan dari suatu branch ke branch lainnya (biasanya commit akan bernamakan template merge). git rebase akan menuliskan seluruh commit dengan dengan mengambil commit dari satu cabang dan menerapkannya ke cabang lainnya. git squash hampir sama dengan git merge hanya saja dengan git squash dimana kita dapat menggabungkan beberapa commit menjadi 1 commit saja.
+
+
+Practical Test
+https://github.com/Yuniarrr/Technical-Test-UX-Engineer 
