@@ -26,11 +26,11 @@ function renderProducts(products) {
         const detailPrice = document.createElement('div');
         detailPrice.classList.add('detail-price');
 
-        const rp = document.createElement('p');
-        rp.textContent = `Rp${product.price}`;
-        detailPrice.appendChild(rp);
-
         if (product.discount != 0) {
+            const rp = document.createElement('p');
+            rp.textContent = `Rp${product.price}`;
+            detailPrice.appendChild(rp);
+
             const disc = document.createElement('p');
             disc.textContent = `${product.discount}%`;
             detailPrice.appendChild(disc);
@@ -60,8 +60,14 @@ scrollToTop.addEventListener('click', () => {
     });
 });
 
-// scroll to next product item 30px
+// next & previous buttons
 const scrollToNext = document.getElementById('next-product');
+const prevButton = document.getElementById('prev-product');
+
+productContainer.addEventListener('scroll', updateNextButtonVisibility);
+
+updateNextButtonVisibility();
+
 scrollToNext.addEventListener('click', () => {
     productContainer.scrollBy({
         left: 30,
@@ -69,14 +75,22 @@ scrollToNext.addEventListener('click', () => {
     });
 });
 
-// scroll to prev product item 30px
-const scrollToPrev = document.getElementById('prev-product');
-scrollToPrev.addEventListener('click', () => {
+prevButton.addEventListener('click', () =>
     productContainer.scrollBy({
         left: -30,
         behavior: 'smooth'
-    });
-});
+    })
+);
+
+function updateNextButtonVisibility() {
+    const remainingScroll = productContainer.scrollWidth - (productContainer.scrollLeft + productContainer.clientWidth);
+    scrollToNext.style.display = remainingScroll > 0 ? 'block' : 'none';
+    prevButton.style.display = productContainer.scrollLeft > 0 ? 'block' : 'none';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    scrollToNext.style.display = 'block';
+})
 
 // hide details footer
 const hideButton = document.getElementById('hide-details');
@@ -85,9 +99,7 @@ hideButton.addEventListener('click', () => {
     loremText.classList.toggle('hide');
     if (loremText.classList.contains('hide')) {
         hideButton.textContent = 'Show All';
-        // loremText.style.display = 'none';
     } else {
         hideButton.textContent = 'Collapse all';
-        // loremText.style.display = 'block';
     }
 });
