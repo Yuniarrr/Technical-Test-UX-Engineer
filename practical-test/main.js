@@ -84,10 +84,10 @@ const loremText = document.querySelector('#footer p');
 hideButton.addEventListener('click', () => {
     loremText.classList.toggle('hide');
     if (loremText.classList.contains('hide')) {
-        hideButton.textContent = 'Show details';
-        loremText.style.display = 'none';
+        hideButton.textContent = 'Show All';
+        // loremText.style.display = 'none';
     } else {
-        hideButton.textContent = 'Hide details';
-        loremText.style.display = 'block';
+        hideButton.textContent = 'Collapse all';
+        // loremText.style.display = 'block';
     }
 });

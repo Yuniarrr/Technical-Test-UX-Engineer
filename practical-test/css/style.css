@@ -235,6 +235,7 @@ body {
   justify-content: flex-start;
   align-self: flex-start;
   flex-wrap: nowrap;
+  flex: 0 0 auto;
   gap: 20px;
   overflow-x: auto;
   width: calc(100vw - 60px);
@@ -331,6 +332,14 @@ body {
   display: flex;
 }
 
+.rounded-btn {
+  border-radius: 100%;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 5px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+}
+
 #next-product {
   position: absolute;
   /* top: 58%; */
@@ -341,4 +350,13 @@ body {
   position: absolute;
   /* top: 58%; */
   left: 5%;
+}
+
+.animated-text {
+  transition: opacity 0.5s ease;
+}
+
+.hide {
+  opacity: 0;
+  display: none;
 }
